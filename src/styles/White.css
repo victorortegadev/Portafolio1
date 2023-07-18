@@ -1,0 +1,7 @@
+.white{
+    height: 10px;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

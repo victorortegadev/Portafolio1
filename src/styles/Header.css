@@ -1,6 +1,13 @@
 header {   
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color:black;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
 }
 .home {
     background-color: black;

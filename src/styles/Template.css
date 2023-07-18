@@ -1,5 +1,7 @@
 .Template { 
-    height: 100%;
     display: grid;
     grid-template-rows: 125px 1fr;
+    height: 100vh;
+    overflow: auto;
+    padding: 0px 10px;
 }
