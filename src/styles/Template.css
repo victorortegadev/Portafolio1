@@ -1,0 +1,5 @@
+.Template { 
+    height: 100%;
+    display: grid;
+    grid-template-rows: 125px 1fr;
+}

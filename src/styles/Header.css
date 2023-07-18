@@ -1,0 +1,32 @@
+header {   
+    display: flex;
+    justify-content: space-between;
+}
+.home {
+    background-color: black;
+    color: white;
+    width: 155px;
+    height: 120px;
+}
+.portfolio {
+    height: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.portfolio p {
+    margin-bottom: 8px;
+}
+.contact {
+    height: 120px;
+    padding-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-right: 50px;
+}
+.space{
+    display: flex;
+}
