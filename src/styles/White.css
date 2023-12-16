@@ -1,7 +1,8 @@
 .white{
-    height: 10px;
     background-color: white;
     position: sticky;
     bottom: 0;
-    width: 100%;
+}
+@media (min-width: 0px) and (max-width: 745px) {
+  .white{ display: none;}
 }

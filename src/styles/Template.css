@@ -1,8 +1,76 @@
 .Template { 
     display: grid;
-    grid-template-rows: 125px 1fr;
-    height: 100vh;
-    overflow: auto;
     padding: 0px 10px;
+    position: relative;
+}
+@media (min-width: 0px) and (max-width: 745px) {
+    .Template { 
+        padding: 0px 0px;
+        grid-template-rows: repeat(4, 0px) 1fr !important;
+    }
 }
 
+.homeP{
+    font-family: 'Josefin Sans', sans-serif;
+    position: sticky;
+    width: 25vh;
+    font-size: 2em;
+    color: white;
+    margin-top: calc(11vh + 10px);
+    transform: translate(0%, -50%);
+    top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000100;
+
+    cursor: pointer;
+}
+@media (max-width: 405px) {
+    .homeP {
+        margin-top: 150px;
+        justify-content: start;
+        margin-left: 10px;
+    }
+}
+.porText{
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 40px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: 9000100;
+    display: flex;
+    align-items:center ;
+    margin-top: 20px;
+    -webkit-text-fill-color: transparent !important;
+    background-clip:text !important;
+    justify-content: center;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    .porText2 {
+        -webkit-text-fill-color: initial!important;
+        background-clip: initial !important;
+        color: white !important;
+        background: initial !important;
+    }
+    .porText3 {
+        -webkit-text-fill-color: initial!important;
+        background-clip: initial !important;
+        color: white !important;
+        background: initial !important;
+    }
+    .marT {
+        margin-top: 150px;
+    }
+}
+@media (max-width: 598px) {
+    .porText{
+        display: none;
+    }
+    .Template {
+        grid-template-rows: repeat(1, 0px) 1fr !important;
+    }
+}
