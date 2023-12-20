@@ -99,16 +99,21 @@ export function Model(props) {
 
   const [audio] = useState(new Audio('/siesta.mp3'))
 
-  useEffect(()=> { if(isGirando == true) { setTimeout(() => { audio.play() }, nivel? 500 :1000) } },[isGirando])
-  useEffect(()=> { if(isGirando == false) { audio.pause()}},[isGirando])
-  useEffect(()=> { if(isGirando == false  && !nivel) {  audio.currentTime = 0 }},[isGirando])
+  useEffect(()=> { if(isGirando == true) { setTimeout(() => {audio.play()} , nivel? 500 :1000) } }, [isGirando])
 
-  useEffect(() => {audio.volume = volumen2},[volumen2])
+  useEffect(()=> { if(isGirando == false) { audio.pause() } }, [isGirando])
+  useEffect(()=> { if(isGirando == false) { setTimeout(() => {audio.pause()} , nivel? 500 :1000) } }, [isGirando])
 
+  //useEffect(()=> { if(isGirando == false  && !nivel) {  audio.currentTime = 0 } }, [isGirando])
+  useEffect(()=> { if(isGirando == false  && !nivel) { setTimeout(() => {audio.currentTime = 0} , nivel? 500 :1000) } }, [isGirando])
+
+  useEffect(() => {audio.volume = volumen2}, [volumen2])
+  
   useEffect(() => {
     if(isEncendido == false){
       setPausado(false)
       setRetraso(true)
+      audio.currentTime = 0
     }
     if(isEncendido == true){
       setRetraso(false)
