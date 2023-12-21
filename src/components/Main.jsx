@@ -22,9 +22,10 @@ function Main() {
                     className='forma'
                  
                 >
-                    <Suspense fallback = {null}>
+                      <Suspense fallback = {null}>
                         <Scene/>
                     </Suspense>
+
                 </motion.div>
 
             </motion.div>
@@ -70,3 +71,8 @@ function Main() {
     );
 }
 export default Main;
+/*
+                    <Suspense fallback = {null}>
+                        <Scene/>
+                    </Suspense>
+*/

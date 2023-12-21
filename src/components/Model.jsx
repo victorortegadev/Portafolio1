@@ -134,7 +134,7 @@ export function Model(props) {
       {...props} 
       dispose={null}
     > 
-      <group  name="Scene"> 
+      <group  name="Scene">
         <group
           name="Main_Body"
           position={[2.924, -0.667, -3.144]}
