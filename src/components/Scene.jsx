@@ -6,7 +6,7 @@ function Scene() {
 
   return (
       <Canvas 
-        frameloop="demand"
+        //frameloop="demand"
         camera={{
           fov: 60, 
           position : [0,0,-27],
